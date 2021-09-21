@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Website",
+    siteUrl: "https://mattloniero.gatsbyjs.io",
+    title: "Matt Loniero Website",
   },
   plugins: [
     {
