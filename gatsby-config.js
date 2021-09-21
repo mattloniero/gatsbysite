@@ -10,6 +10,8 @@ module.exports = {
         url: "https://mattloniero.com/graphql",
       },
     },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
