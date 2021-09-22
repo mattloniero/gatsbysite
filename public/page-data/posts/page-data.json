@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-posts-js",
+    "path": "/posts/",
+    "result": {"data":{"allWpPost":{"nodes":[{"id":"cG9zdDozOA==","slug":"another-blog-post","title":"Another Blog Post","content":"\n<p>This is another blog post.</p>\n"},{"id":"cG9zdDox","slug":"hello-world","title":"Hello world!","content":"\n<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>\n"}]}},"pageContext":{}},
+    "staticQueryHashes": []}
