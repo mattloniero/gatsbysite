@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 
 const Posts = ({ data }) => {
@@ -10,7 +10,7 @@ const Posts = ({ data }) => {
                 data.allWpPost.nodes.map(node=> (
                     <li key={node.id}>
                         <p><strong>{node.slug}</strong></p>
-                        <h2>{node.title}</h2>
+                        <h2><Link to={`/${node.slug}`}>{node.title}</Link></h2>
                         <div dangerouslySetInnerHTML={{ __html: node.content }} />
                     </li>
                 ))
