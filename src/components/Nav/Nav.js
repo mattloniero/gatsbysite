@@ -6,12 +6,11 @@ const Nav = () => {
     return(
         <nav className="site-navigation">
             <div className="site-title">
-                Matt Loniero
+            <Link to="/">Matt Loniero</Link>
             </div>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/posts">Posts</Link></li>
+                <li><Link to="/about">Work</Link></li>
+                <li><Link to="/posts">Skills</Link></li>
             </ul>
         </nav>
     )

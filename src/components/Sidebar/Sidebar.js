@@ -55,7 +55,7 @@ const links = [
 
 const Sidebar = () => {
     return(
-        <aside>
+        <aside className="site-sidebar">
             <h2>Gatsby Content</h2>
             <ul>
                 <li>

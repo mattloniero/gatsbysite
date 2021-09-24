@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Forecast from '../Forecast/Forecast';
 
 const Header = (props) => {
     return (
@@ -8,7 +7,6 @@ const Header = (props) => {
             {
                 props.description ? <p>{props.description}</p> : 0
             }
-            <Forecast />
         </header>
     );
 }

@@ -2,7 +2,7 @@ import * as React from "react"
 
 const Main = ({extraClasses, children}) => {
     return(
-        <section className={extraClasses}>
+        <section className="site-content">
             {children}
         </section>
     )

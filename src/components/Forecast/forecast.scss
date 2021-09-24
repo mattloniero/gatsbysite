@@ -1,53 +1,45 @@
-.WeatherTitle {
-    font-size: 2em;
+.weather-title {
     margin: 1em 0;
 }
 
-.TextInput {
-    font-size: large;
-    border: 1px solid #EEEEEE;
-    padding: 5px;
-    border-radius: 3px;
+.text-input {
+    border: 1px solid #CDCDCD;
+    padding: 0.5em;
+    border-radius: 0.2em;
     display: block;
-    margin: 1em auto;
 }
   
-.TextInput:focus {
+.text-input:focus {
     outline: none;
     border-color: #719ECE;
     box-shadow: 0 0 10px rgb(50, 100, 153);
 }
 
-.Radios {
-    width: 420px;
+.radios {
     max-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 1em;
-    margin: 0 auto;
 }
   
-.Radio {
+.radio {
     font-size: 15px;
 }
   
-.Button {
+.button {
     display: block;
-    margin: 1em auto;
-    padding: .5rem 1em;
-    font-size: 1em;
+    padding: .8rem 2em .5em;
     background: #008383;
-    border-radius: 5px;
+    border-radius: 0.2em;
     color: white;
     cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 700;
+    line-height: 1;
     border: none;
     box-shadow: 0 2px 0 1px rgba(0,0,0,0.6);
     transition: transform 200ms linear, box-shadow 120ms ease-in, background 140ms ease-out;
 }
 
-.Button:hover {
+.button:hover {
     background: #044747;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.7);
     transform: translateY(2px);

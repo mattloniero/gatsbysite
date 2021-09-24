@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Conditions from '../Conditions/Conditions';
-import * as classes from './Forecast.module.css';
+import './forecast.scss';
 
 const Forecast = () => {
     let [responseObj, setResponseObj] = useState({});
@@ -26,20 +26,20 @@ const Forecast = () => {
     }
     return(
         <div>
-            <h2 className={classes.WeatherTitle}>Check the weather.</h2>
+            <h2 className="weather-title">Check the weather.</h2>
             <form onSubmit={getForecast}>
                 <input 
-                    className={classes.TextInput}
+                    className="text-input"
                     type="text"
                     placeholder="Enter City"
                     maxLength="64"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                 />
-                <div className={classes.Radios}>
+                <div className="radios">
                     <label>
                         <input
-                        className={classes.Radio}
+                        className="radio"
                             type="radio"
                             name="units"
                             checked={unit === 'imperial'}
@@ -50,7 +50,7 @@ const Forecast = () => {
                     </label>
                     <label>
                         <input
-                        className={classes.Radio}
+                        className="radio"
                             type="radio"
                             name="units"
                             checked={unit === 'metric'}
@@ -60,7 +60,7 @@ const Forecast = () => {
                         Celsius
                     </label>
                 </div>
-                <button className={classes.Button} type="submit">Get Forecast</button>
+                <button className="button" type="submit">Get Forecast</button>
             </form>
             <Conditions responseObj={responseObj} />
         </div>
