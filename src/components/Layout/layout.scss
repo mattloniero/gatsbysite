@@ -1,14 +1,86 @@
 $font-stack: "Amiko", Arial, sans-serif;
 $font-base: 18px;
+$margin-default: 1.1rem;
 
 body {
     font-family: $font-stack;
     font-size: $font-base;
 }
 
-form, input, select, button, textarea {
-    font-family: $font-stack;
-    font-size: $font-base + ($font-base / 6);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $margin-default;
+}
+
+ol,
+ul {
+    padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+     margin-top: 0;
+     margin-bottom: $margin-default;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+label {
+    display: inline-block;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+select {
+    word-wrap: normal;
+    &:disabled {
+        opacity: 1;
+    }
 }
 
 a {
@@ -44,7 +116,7 @@ main {
 .site-content {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: 46ch;
+    min-width: 52%;
     max-width: 100%;
 }
 
