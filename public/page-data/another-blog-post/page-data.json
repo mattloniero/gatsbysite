@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-post-js",
     "path": "/another-blog-post",
-    "result": {"data":{"wpPost":{"id":"cG9zdDozOA==","slug":"another-blog-post","content":"\n<p>This is another blog post.</p>\n","title":"Another Blog Post","date":"June 14, 2020"}},"pageContext":{"id":"cG9zdDozOA==","uri":"/another-blog-post/","slug":"another-blog-post","title":"Another Blog Post","content":"\n<p>This is another blog post.</p>\n"}},
+    "result": {"data":{"wpPost":{"id":"cG9zdDozOA==","slug":"another-blog-post","content":"\n<p>This is another blog post.</p>\n","title":"Another Blog Post","date":"June 14, 2020"}},"pageContext":{"id":"cG9zdDozOA==","slug":"another-blog-post","title":"Another Blog Post","content":"\n<p>This is another blog post.</p>\n"}},
     "staticQueryHashes": []}

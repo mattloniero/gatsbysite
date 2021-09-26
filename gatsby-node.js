@@ -11,7 +11,6 @@ exports.createPages = async ({ graphql, actions }) => {
             allWpPost {
                 nodes {
                     id
-                    uri
                     slug
                     title
                     content

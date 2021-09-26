@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import fetch from "node-fetch";
 import Conditions from '../Conditions/Conditions';
 
 const Weather = () => {
