@@ -1,6 +1,6 @@
 import * as React from "react"
 import { StaticImage } from 'gatsby-plugin-image'
-import Weather from "../Weather/Weather"
+import Crypto from "../Crypto/Crypto"
 import "./sidebar.scss"
 
 const links = [
@@ -39,7 +39,14 @@ const Sidebar = () => {
                     </li>
                 ))}
             </ul>
-            <Weather />
+            <div className="side-card">
+              <h3>Crypto Corner</h3>
+              <p><small>Current Prices</small></p>
+              <Crypto apiUrl="https://coinranking1.p.rapidapi.com/coin/1" />
+              <Crypto apiUrl="https://coinranking1.p.rapidapi.com/coin/2" />
+              <Crypto apiUrl="https://coinranking1.p.rapidapi.com/coin/71983" />
+              <Crypto apiUrl="https://coinranking1.p.rapidapi.com/coin/12606" />
+            </div>
             <figure>
               <StaticImage
                 alt="Succulents"

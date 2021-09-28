@@ -9,6 +9,7 @@
         flex-basis: 24ch;
         flex-grow: 1;
         max-width: 100%;
+        padding:0.5rem 0;
         a {
             padding: 0 .5em;
             text-decoration: none;
@@ -31,10 +32,10 @@
         flex-grow: 999;
         min-width: 50%;
         list-style: none;
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
         margin: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         li {
             
             a {
@@ -52,6 +53,15 @@
                     border-bottom: 1px solid #cdcdcd;
                 }
             }
+        }
+    }
+    @media screen and (orientation: portrait) {
+        .site-title {
+            text-align: center;
+            justify-self: center;
+        }
+        ul {
+            justify-content: space-around;
         }
     }
 }

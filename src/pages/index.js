@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import "@fontsource/amiko"
 import Header from "../components/Header/Header"
 import Layout from "../components/Layout/Layout"
-import Crypto from "../components/Crypto/Crypto"
+import Weather from "../components/Weather/Weather"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -17,8 +17,8 @@ const IndexPage = () => {
   `)
   return (
     <Layout pageTitle={ data.site.siteMetadata.title }>
-      <Header title="Testing" description="This is a test." />
-      <Crypto />
+      <Header title="Matt Loniero" description="Web Developer in Los Angeles." />
+      <Weather />
     </Layout>
   )
 }

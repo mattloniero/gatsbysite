@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Conditions = (props) => {
-    console.log(props.responseObj)
     return (
         <div>
             {props.responseObj.cod === 200 ?

@@ -1,0 +1,21 @@
+#crypto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: lighten(#1a3358,70%);
+    border: 3px double lighten(#1a3358,60%);
+    border-radius: 0.5rem;
+    box-shadow: inset 0 -2px 30px -4px rgba(0,0,0,0.4);
+    > * {
+        flex-basis: 7.2rem;
+        flex-grow: 0;
+        padding: 0.5em;
+        text-align: center;
+    }
+}
+
+.crypto-section {
+    h3, p {
+        margin: 0;
+    }
+}

@@ -29,6 +29,7 @@ const Weather = () => {
     return(
         <div>
             <Conditions responseObj={responseObj} />
+            <button id="showWeatherInput">Check the weather where you are.</button>
         </div>
     )
 }

@@ -1,31 +1,29 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import fetch from "node-fetch";
 import CryptoResponse from "./CryptoResponse"
 
-const Crypto = () => {
+const Crypto = (props) => {
     let [responseObj, setResponseObj] = useState({});
-    function getEth() {
-        fetch("https://api.coinranking.com/v2/coin/2", {
-            "method": "GET",
-            "headers": {
-                "x-access-token": "coinranking5e1cda3c09dd8b098d8c17a58cc0da77d87f67e3ff2279ad"
-            }
-        })
-        .then(response => {
-            console.log(response);
-        })
-        // .then(response => {
-        //     setResponseObj(response)
-        // })
-        .catch(err => {
-            console.error(err);
-        });
-    }
-    if (Object.entries(responseObj).length === 0) {
-        getEth();
-    }
+    useEffect(() => {
+        if ( Object.entries(responseObj).length === 0 ) { 
+            fetch(props.apiUrl, {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "coinranking1.p.rapidapi.com",
+                    "x-rapidapi-key": "9445d8809dmsh3dd64d168da9a7ep12b8e2jsn5ee4c33053b1"
+                }
+            })
+            .then(response => response.json())
+            .then(response => {
+                setResponseObj(response)
+            })
+            .catch(err => {
+                console.error(err);
+            });
+        }
+    })
     return(
-        <div id="eth">
+        <div>
             <CryptoResponse responseObj={responseObj} />
         </div>
     )
