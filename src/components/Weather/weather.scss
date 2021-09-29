@@ -1,0 +1,72 @@
+.weather-button {
+    background: rgba(#FFF,0.8);
+    border: 1px solid #ccdbf3;
+    border-radius: 1rem;
+    color: #1a3358;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 1px 6px -1px rgba(#fff, 0.8);
+    text-shadow: 0 1px 3px rgba(#fff,0.8);
+    cursor: pointer;
+    transition: all 280 ease-in;
+    &:hover {
+        background: rgba(#ccdbf3, 0.9);
+        border-color: darken(#ccdbf3, 10%);
+        box-shadow: 0 0 2px 0 rgba(#DDD,0.8);
+    }
+}
+
+form input {
+    display: inline-block;
+    border: 1px solid #ccdbf3;
+    border-radius: 1rem;
+    color: #1a3358;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 1px 6px -1px rgba(#fff, 0.8);
+    &[type=submit] {
+        cursor: pointer;
+        box-shadow: 0 1px 6px -1px rgba(#fff, 0.8);
+        text-shadow: 0 1px 3px rgba(#fff,0.8);
+        &:hover {
+            background: rgba(#ccdbf3, 0.9);
+            border-color: darken(#ccdbf3, 10%);
+            box-shadow: 0 0 2px 0 rgba(#DDD,0.8);
+        }
+    }
+}
+
+#customCity {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    max-width: 60ch;
+    > label {
+        flex-basis: 100%;
+        margin: 0 0 0.5rem;
+        font-weight: 700;
+    }
+    > input[type=text] {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        flex-grow: 2;
+        margin: 0.5rem 0 0;
+    }
+    > input[type=submit] {
+        display: inline-block;
+        flex-basis: 2rem;
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin: 0.5rem 0 0 0.5rem;
+    }
+    @media screen and (orientation: landscape) {
+        > input[type=text] {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin: 0;
+        }
+        > input[type=submit] {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin: 0;
+        }
+    }
+}
