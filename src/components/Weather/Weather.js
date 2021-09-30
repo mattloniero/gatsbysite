@@ -13,19 +13,24 @@ const Weather = () => {
     const [greeting, setGreeting] = React.useState('This is  the weather where I am at:')
     const handleClick = () => {
         setShowCityInput(!showCityInput);
+        displayCityInput();
+    }
+    const displayCityInput = () => {
         if (!showCityInput) {
-            setCity(customCity);
             setMessage('Show the weather where I am.')
             setGreeting('This is the weather where you are at:')
+            setCity(customCity)
+            setResponseObj({})
         } else { 
             setCustomCity(city)
             setMessage('Check the weather where you live.')
             setGreeting('This is the weather where I am at:')
-            setCity('Westlake Village')
+            getMyForecast()
         }
     }
     const handleInput = (e) => {
         setCity(e.target[0].value)
+        setCustomCity(e.target.value);
     }
     const getForecast = () => {
         let uriCity = encodeURI(city);
@@ -44,12 +49,26 @@ const Weather = () => {
             console.error(err);
         });
     }
+    const getMyForecast = () => {
+        let uriCity = encodeURI('Westlake Village');
+        fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=imperial&q=${uriCity}`, {
+	        "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+                "x-rapidapi-key": "9445d8809dmsh3dd64d168da9a7ep12b8e2jsn5ee4c33053b1"
+            }
+        })
+        .then(response => response.json())
+        .then(response => {
+            setResponseObj(response)
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    }
     useEffect(() => {
         getForecast()
     }, [city])
-    if(!city) {
-        setCity('Westlake Village')
-    }
     return(
         <div>
             <Conditions weatherGreeting={greeting} responseObj={responseObj} />

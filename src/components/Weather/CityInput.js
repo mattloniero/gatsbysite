@@ -26,9 +26,9 @@ function CityInput(props) {
                     value={newCity}
                     onChange={(e) => setNewCity(e.target.value)}
                 /> 
-                <input type="submit" value="Submit" />
+                <input className="weather-button" type="submit" value="Submit" />
             </form>
-            <button onClick={restoreDefault}>Reset Everything</button>
+            <button className="reset-button" onClick={restoreDefault}>Reset Everything</button>
         </>
     )
 }

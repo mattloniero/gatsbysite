@@ -2,15 +2,46 @@ import * as React from "react"
 import Layout from "../components/Layout/Layout"
 import Header from "../components/Header/Header"
 
-const pageTitle = `About Matt Loniero`
-const pageDescription = `Matt Loniero is a front-end web developer in Los Angeles`
+const pageTitle = `This is some of the work that I have done.`
+const pageDescription = `Custom website development as part of a team, the leader of a team, or as an individual.`
+
+const links = [
+    {
+      text: "Modern Vascular",
+      url: "https://modernvascular.com",
+      description: "Outpatient clinics providing minimally invasive endovascular procedures."
+    },
+    {
+      text: "Semper Solaris",
+      url: "https://sempersolaris.com",
+      description: "California solar panel, roofing, heating, and air conditioning company."
+    },
+    {
+      text: "Kevin Manthei (Composer)",
+      url: "https://kevinmantheimusic.com",
+      description: "Music composer for television, film, and video games."
+    }
+]
 
 const About = () => {
     return(
         <Layout pageTitle="About Matt Loniero">
-            <header>
-                <Header title={pageTitle} description={pageDescription} />
-            </header>
+            <Header title={pageTitle} description={pageDescription} />
+            <h2>Projects</h2>
+            <ul>
+                {links.map(link => (
+                    <li key={link.url}>
+                    <span>
+                        <a
+                        href={`${link.url}?utm_source=sidebar&utm_medium=website&utm_campaign=companies`}
+                        >
+                        {link.text}
+                        </a>
+                        <p>{link.description}</p>
+                    </span>
+                    </li>
+                ))}
+            </ul>
         </Layout>
     )
 }

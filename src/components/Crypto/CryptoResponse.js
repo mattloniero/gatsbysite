@@ -6,7 +6,7 @@ const CryptoResponse = (props) => {
     return (
         <>
             {props.responseObj.status === "success" ?
-                <div className="crypto-section" id={props.responseObj.data.coin.slug}>
+                <div id={props.responseObj.data.coin.slug}>
                     {/*
                         props.responseObj.data.coin.websiteUrl ? <a href={props.responseObj.data.coin.websiteUrl}>
                             <img

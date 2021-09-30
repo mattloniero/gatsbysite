@@ -107,6 +107,10 @@ a {
     }
 }
 
+.text-center {
+    text-align: center;
+}
+
 .layout {
     width: 96ch;
     max-width: 100%;
@@ -117,6 +121,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 2ch;
+}
+
+header {
+    padding: 2rem 0;
+    h1 {
+        width: 36ch;
+        max-width: 100%;
+        font-size: 2rem;
+        margin: 0 0 1rem;
+    }
+    p {
+        width: 54ch;
+        max-width: 100%;
+        font-size: 1.3rem;
+        margin: 0;
+    }
 }
 
 .site-content {

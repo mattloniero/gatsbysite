@@ -3,15 +3,37 @@
     border: 1px solid #ccdbf3;
     border-radius: 1rem;
     color: #1a3358;
+    font-weight: 700;
     padding: 0.5rem 1rem;
     box-shadow: 0 1px 6px -1px rgba(#fff, 0.8);
     text-shadow: 0 1px 3px rgba(#fff,0.8);
     cursor: pointer;
-    transition: all 280 ease-in;
+    transition: all 280ms ease-in;
     &:hover {
         background: rgba(#ccdbf3, 0.9);
         border-color: darken(#ccdbf3, 10%);
         box-shadow: 0 0 2px 0 rgba(#DDD,0.8);
+    }
+}
+
+.reset-button {
+    background: #1a3358;
+    color: #ccdbf3;
+    border: 1px solid darken(#1a3358, 10%);
+    border-radius: 1rem;
+    font-weight: 700;
+    border: 0px solid #1a3358;
+    border-bottom: 2px solid #1a3358;
+    padding: 0.5rem 1rem 0.35rem;
+    box-shadow: 0 1px 6px -1px rgba(darken(#1a3358, 10%), 0.8);
+    text-shadow: 0 1px 3px rgba(darken(#1a3358, 10%),0.8);
+    cursor: pointer;
+    transition: all 280ms ease-in;
+    &:hover {
+        color: #FFF;
+        background: rgba(darken(#1a3358, 10%), 0.95);
+        border-color: darken(#1a3358, 15%);
+        box-shadow: 0 0 2px 0 rgba(darken(#1a3358, 15%),0.85);
     }
 }
 

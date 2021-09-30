@@ -8,15 +8,26 @@ figure > figcaption {
 }
 
 .side-card {
-    background: lighten(rgba(26, 51, 88, 0.4),70%);
-    padding: 1rem 0.5rem;
+    background: rgba(lighten(#ccdbf3, 7%), 0.85);
+    padding: 1rem 0.5rem 0.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 24px -4px rgba(0,0,0,0.4);
+    box-shadow: inset 0 1px 38px -10px rgba(255,255,255,0.8);
     h1, h2, h3, h4 {
-        margin: 0 0 0.5rem;
+        line-height: 1;
+        margin: 0 0 0.25rem;
         font-weight: bold;
     }
     p {
-        margin: 0 0 0.25rem;
+        margin: 0 0 0.75rem;
+    }
+}
+
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 2;
     }
 }
