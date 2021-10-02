@@ -72,7 +72,7 @@ const Weather = () => {
     return(
         <div>
             <Conditions weatherGreeting={greeting} responseObj={responseObj} />
-            <button class="weather-button" onClick={handleClick}>{message}</button>
+            <button className="weather-button" onClick={handleClick}>{message}</button>
             {showCityInput && (
                 <CityInput city={city} onSubmit={handleInput} />
             )}

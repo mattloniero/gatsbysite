@@ -6,7 +6,7 @@ import "./sidebar.scss"
 const Sidebar = () => {
     return(
         <div className="site-sidebar">
-            <aside className="side-card text-center">
+            <aside className="card text-center">
               <h3>Cryptocurrency</h3>
               <p><small>Current Prices</small></p>
               <div class="row-2">

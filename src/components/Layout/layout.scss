@@ -151,6 +151,16 @@ header {
     flex-grow: 1;
 }
 
+.row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+        flex-basis: 32rem;
+        flex-grow: 0;
+    }
+}
+
 @-webkit-keyframes BackgroundGradient {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}

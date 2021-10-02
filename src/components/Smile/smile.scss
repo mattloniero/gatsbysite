@@ -1,0 +1,9 @@
+.row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+        flex-basis: 24ch;
+        flex-grow: 0;
+    }
+}
