@@ -142,7 +142,7 @@ header {
 .site-content {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: 52%;
+    min-width: calc( 65% + 1rem );
     max-width: 100%;
 }
 

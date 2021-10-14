@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import fetch from "node-fetch";
 import "./smile.scss";
 
@@ -20,27 +20,27 @@ const Smile = () => {
             console.error(err);
         });
     }
-    // useEffect(() => {
-    //     getPost();
-    // },[post])
     if (post === '') {
         getPost();
     }
     return(
-        <div className="row-3">
+        <>
             {   
                 post && (
-                    <figure className="card">
+                    <figure className="card card-link">
                         <img
                             alt="Reddit Made Me Smile Post Preview Image"
                             src={post.data.children[0].data.thumbnail}
                         />
-                        <figcaption><p><a className="card-link" href={`https://reddit.com${post.data.children[0].data.permalink}`}>{`${post.data.children[0].data.title}`}</a></p></figcaption>
-                        <p className="subtitle"><a href={`https://reddit.com/${post.data.children[0].data.subreddit_name_prefixed}`}>{post.data.children[0].data.subreddit_name_prefixed}</a></p>
+                        <figcaption>
+                            <p><a className="card-link" href={`https://reddit.com${post.data.children[0].data.permalink}`}>{`${post.data.children[0].data.title}`}</a></p>
+                            <p className="subtitle"><a href={`https://reddit.com/${post.data.children[0].data.subreddit_name_prefixed}`}>{post.data.children[0].data.subreddit_name_prefixed}</a></p>
+                        </figcaption>
+                        
                     </figure> 
                 )
             }         
-        </div>
+        </>
     )
 }
 

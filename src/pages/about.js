@@ -2,6 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout/Layout"
 import Header from "../components/Header/Header"
 import Smile from "../components/Smile/Smile"
+import News from "../components/News/News"
 
 const pageTitle = `This is some of the work that I have done.`
 const pageDescription = `Custom website development as part of a team, the leader of a team, or as an individual.`
@@ -43,7 +44,12 @@ const About = () => {
                     </li>
                 ))}
             </ul>
-            <Smile />
+            <h2>What's happening around the web?</h2>
+            <div className="row-3">
+                
+                <Smile />
+                <News />
+            </div>
         </Layout>
     )
 }

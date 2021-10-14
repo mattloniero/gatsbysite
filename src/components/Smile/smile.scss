@@ -1,9 +1,17 @@
 .row-3 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 1ch;
     > * {
-        flex-basis: 24ch;
+        flex-basis: 23ch;
         flex-grow: 0;
+        @media only screen and (max-width: 892px) {
+            flex-basis: calc(50% - 1rem);
+        }
+        @media only screen and (orientation: portrait) and (max-width: 720px) {
+            flex-basis: auto;
+        }
     }
+
 }

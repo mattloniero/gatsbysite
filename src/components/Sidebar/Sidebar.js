@@ -9,7 +9,7 @@ const Sidebar = () => {
             <aside className="card text-center">
               <h3>Cryptocurrency</h3>
               <p><small>Current Prices</small></p>
-              <div class="row-2">
+              <div className="row-2">
                 <Crypto apiUrl="https://coinranking1.p.rapidapi.com/coin/1" />
                 <Crypto apiUrl="https://coinranking1.p.rapidapi.com/coin/2" />
                 <Crypto apiUrl="https://coinranking1.p.rapidapi.com/coin/71983" />
