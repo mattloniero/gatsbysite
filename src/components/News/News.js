@@ -6,7 +6,7 @@ import "./news.scss"
 function News() {
     const [newsPost, setNewsPost] = useState(null)
     const getNewsPost = () => {
-        fetch(`https://bing-news-search1.p.rapidapi.com/news/search?freshness=Day&textFormat=Raw&safeSearch=Strict&q=Tech`, {
+        fetch(`https://bing-news-search1.p.rapidapi.com/news/search?freshness=Day&textFormat=Raw&safeSearch=Strict&q=Technology`, {
 	        "method": "GET",
             "headers": {
                 "x-rapidapi-host": "bing-news-search1.p.rapidapi.com",

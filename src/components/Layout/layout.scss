@@ -7,7 +7,7 @@ body {
     font-size: $font-base;
     background: linear-gradient(270deg, #e1e9f6, #d7e2f3, #ccdbf3);
     background-size: 600% 600%;
-
+    margin: 0;
     -webkit-animation: BackgroundGradient 15s ease infinite;
     -moz-animation: BackgroundGradient 15s ease infinite;
     animation: BackgroundGradient 15s ease infinite;
@@ -121,6 +121,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 2ch;
+    padding: 1rem;
 }
 
 header {

@@ -28,8 +28,9 @@ const Smile = () => {
             {   
                 post && (
                     <figure className="card card-link">
+                        <h3>Some Positivity</h3>
                         <img
-                            alt="Reddit Made Me Smile Post Preview Image"
+                            alt="Reddit Made Me Smile Post"
                             src={post.data.children[0].data.thumbnail}
                         />
                         <figcaption>

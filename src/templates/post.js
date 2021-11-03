@@ -9,8 +9,10 @@ const BlogPost = ({
 }) => {
     return(
         <Layout pageTitle={title}>
-            <h1>{title}</h1>
-            
+            <h1 data-post-id={id}>{title}</h1>
+            <div
+                dangerouslySetInnerHTML={{__html: content}}
+            />
         </Layout>
     )
 }

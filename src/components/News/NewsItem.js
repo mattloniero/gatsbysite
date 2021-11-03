@@ -6,6 +6,7 @@ const NewsItem = (item) => {
     return (
         <>
             <figure className="card card-link">
+                <h3>Tech News</h3>
                 {
                     item.item.image && (
                     <img alt={item.item.name}
