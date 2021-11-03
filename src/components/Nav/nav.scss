@@ -15,6 +15,30 @@
         max-width: 100%;
         padding:0.5rem 0;
     }
+    a {
+        color: #1a3358;
+        padding: 0.25rem 0.8rem;
+        text-shadow: 0 1px 4px #FFF, 0 3px 8px #FFF, 0 5px 20px #FFF;
+        padding: 0 .5em;
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 4px solid transparent;
+        border-radius: 0.5rem;
+        transition: border-bottom 0.3s ease-in;
+        &:hover {
+            color: #242424;
+            background: none;
+            text-shadow: 0 1px 6px rgba(255,255,255,0.8);
+            border-bottom: 4px solid #1a3358;
+        }
+        &:focus {
+            outline: 2px dotted #cdcdcd;
+        }
+        &:active {
+            color: #242424;
+            border-bottom: 1px solid #cdcdcd;
+        }
+    }
     ul {
         flex-basis: 0;
         flex-grow: 999;
@@ -24,27 +48,19 @@
         margin: 0;
         display: flex;
         justify-content: flex-end;
-    }
-    a {
-        color: #1a3358;
-        text-shadow: 0 1px 4px #FFF, 0 3px 8px #FFF, 0 5px 20px #FFF;
-        padding: 0 .5em;
-        text-decoration: none;
-        font-weight: 700;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.3s ease-in;
-        &:hover {
-            color: #242424;
-            background: none;
-            text-shadow: 0 1px 6px rgba(255,255,255,0.8);
-            border-bottom: 2px solid #1a3358;
-        }
-        &:focus {
-            outline: 2px dotted #cdcdcd;
-        }
-        &:active {
-            color: #242424;
-            border-bottom: 1px solid #cdcdcd;
+        gap: 1rem;
+        a {
+            
+            background-color: #1a3358;
+            padding: 0.25rem 0.8rem;
+            color: #FFF;
+            text-shadow: 0 1px 4px #000, 0 3px 8px #000, 0 5px 20px #000;
+            border-bottom: 4px solid #0c1c33;
+            transition: all 0.3s ease-in;
+            &:hover {
+                transform: rotateX(5deg);
+                background: rgba(255,255,255,0.4);
+            }
         }
     }
     @media screen and (orientation: portrait) {

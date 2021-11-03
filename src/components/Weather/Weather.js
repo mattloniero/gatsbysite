@@ -17,7 +17,7 @@ const Weather = () => {
     }
     const displayCityInput = () => {
         if (!showCityInput) {
-            setMessage('Show the weather where I am.')
+            setMessage('Check the weather where I live.')
             setGreeting('This is the weather where you are at:')
             setCity(customCity)
             setResponseObj({})
@@ -70,7 +70,8 @@ const Weather = () => {
         getForecast()
     }, [city])
     return(
-        <div>
+        <div className="weather-report">
+            <h2>The Weather Report</h2>
             <Conditions weatherGreeting={greeting} responseObj={responseObj} />
             <button className="weather-button" onClick={handleClick}>{message}</button>
             {showCityInput && (

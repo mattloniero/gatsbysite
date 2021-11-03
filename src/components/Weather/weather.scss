@@ -1,4 +1,11 @@
+.weather-report {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 4rem;
+}
+
 .weather-button {
+    align-self: flex-start;
     background: rgba(#FFF,0.8);
     border: 1px solid #ccdbf3;
     border-radius: 1rem;
@@ -17,6 +24,7 @@
 }
 
 .reset-button {
+    align-self: flex-start;
     background: #1a3358;
     color: #ccdbf3;
     border: 1px solid darken(#1a3358, 10%);
